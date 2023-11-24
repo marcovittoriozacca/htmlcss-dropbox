@@ -10,6 +10,7 @@
 
 </head>
 <body>
+    <!-- header -->
     <header>
         <!-- nav bar -->
         <nav>
@@ -75,19 +76,92 @@
         
                         <p>Annulla in qualsiasi momento</p>
             
-                        <a href="#">
+                        <a href="#billing">
                             <i class="fas fa-arrow-down"></i>
                         </a>
                     </div>
                     
                     <figure>
-                        <img src="./assets/img/jumbo.png" alt="cta-jumbo">
+                        <a href=""></a> <img src="./assets/img/jumbo.png" alt="cta-jumbo">
                     </figure>
                 </div>
             </div>
         </div>
     </header>
     
+    <!-- main -->
+    <main>
+
+        <div class="container">
+
+            <div id="section1">
+
+                <h2>Trova il piano business che fa per te</h2>
+
+                <!-- billing options -->
+                <div id="billing">
+                    <div class="billing-monthly">
+                        <input type="radio" name="billing-option" id="monthly">
+                        <label for="billing-option">Fatturazione Mensile</label>
+                    </div>
+                    <div class="billing-annual">
+                        <input type="radio" name="billing-option" id="annual">
+                        <label for="billing-option">Fatturazione Annuale</label>
+                    </div>
+                </div>
+
+                <!-- plans -->
+                <div class="plan">
+
+                    <!-- first plan - professional -->
+                    <div class="professional">
+
+                        <div class="user">
+                            <span class="icon single-user">Singolo</span>
+                        </div>
+
+                        <!-- container to pad the inner elements -->
+                        <div class="plan-inner-container">
+
+                            <!-- price -->
+                            <div class="price-month">
+                                <h3>Professional</h3>
+                                <span class="currency">12.00</span>
+                                <span>/mese</span>
+                            </div>
+
+                            <!-- features -->
+                            <div class="feature">
+                                <span>1 utente</span>
+                                <p>5 TB di spazio di archiviazione sicuro</p>
+                                <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                            </div>
+
+                            <!-- try or buy now -->
+                            <div class="try-or-buy-now">
+                                <a class="blue-btn" href="#">
+                                    Prova gratis per 30 giorni
+                                </a>
+                                <span>oppure <a href="#">acquista ora</a></span>
+                            </div>
+
+                            <hr>
+
+                            <!-- highlights -->
+                            <div class="highlights">
+                                <h5>Punti Salienti del piano</h5>
+                                <p class="check">Invia file fino a 100 GB con Dropbox Transfert</p>
+                                <p class="check">Cartelle offline su dispositivi mobili</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
 
 </body>
 </html>
