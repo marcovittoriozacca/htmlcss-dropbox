@@ -41,7 +41,7 @@ nav ul li a{
 }
 /* ----------------------- utility blue button */
 .blue-btn{
-    background-color: #176FFF;
+    background-color: #0661FF;
     color: white;
     padding:12px 17px;
     text-decoration: none;
@@ -150,7 +150,7 @@ main div.container{
     padding: 2em;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 3.5em;
 }
 
 #section1 .plan .price-month,
@@ -162,6 +162,11 @@ main div.container{
     flex-direction: column;
     gap:1em;
 } 
+
+#section1 .plan .try-or-buy-now{
+    gap: 3em;
+}
+
 h3{
     font-size: 1.5rem;
 }
@@ -173,6 +178,17 @@ h3{
 #section1 .plan .price-month .currency::before{
     content: "\20AC";
     margin-right: 3px;
+}
+#section1 .plan .try-or-buy-now a{
+    text-align: center;
+}
+
+#section1 hr{
+    border: 0.5px solid gray;
+}
+
+#section1 .highlights h5{
+    font-size: 1rem;
 }
 
 
@@ -186,8 +202,19 @@ h3{
     -webkit-font-smoothing: antialiased;
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
+    margin-right: 3px;
 }
 
-.single-user::before{
+.user-icon::before{
     content: "\f007";
+}
+.folder-icon::before{
+    content: "\f07b";
+}
+.share-icon::before{
+    content: "\f542";
+}
+.check-icon::before{
+    content: "\f00c";
+    color: #0661FF;
 }
