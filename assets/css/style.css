@@ -10,6 +10,10 @@ img{
     display: block;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 html{
     font-family: sans-serif;
     /* font-weight: 300; */
@@ -40,14 +44,27 @@ nav ul li a{
     text-transform:capitalize;
 }
 /* ----------------------- utility blue button */
-.blue-btn{
-    background-color: #0661FF;
-    color: white;
+.btn{
     padding:12px 17px;
     text-decoration: none;
 }
-.blue-btn:hover{
+
+.blue{
+    background-color: #0661FF;
+    color: white;
+}
+.white{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.blue:hover{
     background-color: #3d87ff;
+}
+
+.white:hover{
+    opacity: 0.5;
 }
 /* ---------------------------------------- */
 nav ul li a.blue-btn{
@@ -116,7 +133,7 @@ main div.container{
 
 /* billing */
 #section1 h2{
-    padding-block:1.5em;
+    padding:1.5em 0 1em 0;
     font-size: 2.5rem;
 }
 
@@ -124,25 +141,42 @@ main div.container{
     display: flex;
     align-items: center;
     gap: 2em;
-    padding-block: 2em;
 }
 
 /* plans */
-#section1 .plan{
+#section1{
     display: flex;
-
+    flex-direction: column;
+    gap: 4em;
 }
 
-/* all plan columns will have a border */
-#section1 div.plan > div{
-    border: 1px solid black;
+#section1 div.plan{
+    display: flex;
+    gap:4em;
+}
+
+.sales-office{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* all plan will have a border */
+#section1 div.plan > div,
+#section1 div.team{
+    border: 0.5px solid gray;
+}
+/* ---------------------------------------- */
+#section1 div.row > div{
+    width: calc(100% / 3);
 }
 
 
 .user{
     text-align: center;
     padding-block: 0.6em;
-    border-bottom: 1px solid black;
+    border-bottom: 0.5px solid gray;
 }
 
 
@@ -153,15 +187,21 @@ main div.container{
     gap: 3.5em;
 }
 
+
 #section1 .plan .price-month,
 #section1 .plan .feature,
 #section1 .plan .try-or-buy-now,
 #section1 .plan hr,
-#section1 .plan .highlights{
+#section1 .plan .highlights,
+#section1 .sales-office .price-month{
     display: flex;
     flex-direction: column;
     gap:1em;
 } 
+
+#section1 .plan .highlights{
+    padding-bottom: 2em;
+}
 
 #section1 .plan .try-or-buy-now{
     gap: 3em;
@@ -184,16 +224,21 @@ h3{
 }
 
 #section1 hr{
-    border: 0.5px solid gray;
+    border: 0.5px solid lightgray;
+    width: 25%;
 }
 
 #section1 .highlights h5{
     font-size: 1rem;
 }
 
+#section1 .team p{
+   width: 85%;
+   padding-top: 3em;
+}
 
 
-/* icons */
+/* plans icons */
 .icon::before {
     display: inline-block;
     font-style: normal;
@@ -202,11 +247,14 @@ h3{
     -webkit-font-smoothing: antialiased;
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
-    margin-right: 3px;
+    margin-right: 10px;
 }
 
 .user-icon::before{
     content: "\f007";
+}
+.more-users-icon::before{
+    content: "\f0c0";
 }
 .folder-icon::before{
     content: "\f07b";
@@ -217,4 +265,27 @@ h3{
 .check-icon::before{
     content: "\f00c";
     color: #0661FF;
+}
+.enterprise-icon::before{
+    content: "\f1ad";
+}
+
+#section1 .partner-dropbox figure img{
+    width: 600px;
+}
+
+#section1 .partner-dropbox{
+    margin-top: 6em;
+    display: flex;
+    gap:4em;
+}
+#section1 .partner-dropbox-text{
+    padding:4em 4em 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+#section1 p, #section1 .partner-dropbox h3{
+    line-height: 140%;
 }
