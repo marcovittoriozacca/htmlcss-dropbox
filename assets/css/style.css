@@ -400,25 +400,38 @@ a{
 
 
 /* left logos */
+
 /* left group top-left */
 #section3 #partners .business-square-col .left-tl{
-    background-image:url(../img/designit_white.svg);
     background-color: #A2D39B;
     border: 15px solid #D1E9CD;
 }
+
+#section3 #partners figure img:not(#partners .business-square-center-col .square-center figure img){ 
+    width: 50%;
+    filter: invert(); 
+}
+#section3 #partners figure:not(#partners .business-square-center-col .square-center figure){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 /* left group bottom-left */
 #section3 #partners .business-square-col .left-bl{
-    background-image:url(../img/university_of_florida.svg);
     background-color: #0093CE;
 }
 /* left group top-right */
 #section3 #partners .business-square-col .left-tr{
-    background-image:url(../img/arizona_state_university.svg);
     background-color: #61082B;
 }
 /* left group bottom-right */
 #section3 #partners .business-square-col .left-br{
-    background-image:url(../img/topps.svg);
     background-color: #FF1C1C;
 }
 
@@ -426,22 +439,18 @@ a{
 /* right logos */
 /* left right top-left */
 #section3 #partners .business-square-col .right-tl{
-    background-image:url(../img/world_bicycle_relief.svg);
     background-color: #D5001F;
 }
 /* left right bottom-left */
 #section3 #partners .business-square-col .right-bl{
-    background-image:url(../img/lonely_planet.svg);
     background-color: #0D2481;
 }
 /* left right top-right */
 #section3 #partners .business-square-col .right-tr{
-    background-image:url(../img/hearst_corp.svg);
     background-color: #B4D0E7;
 }
 /* left right bottom-right */
 #section3 #partners .business-square-col .right-br{
-    background-image:url(../img/clear_channel.svg);
     background-color: #FFD830;
 }
 
@@ -452,7 +461,7 @@ a{
     background-size: 50%;
 }
 
-
+/* section 3 inner square circles element */
 #section3 hr{
     border: 0.5px solid lightgray;
     width: 25%;
