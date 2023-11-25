@@ -25,15 +25,15 @@
                 </li>
 
                 <li>
-                    <a href="#">perché Dropbox</a>
+                    <a href="#section2">perché Dropbox</a>
                 </li>
 
                 <li>
-                    <a href="">funzioni</a>
+                    <a href="#funzioni-anchor">funzioni</a>
                 </li>
 
                 <li>
-                    <a href="#">piani e prezzi</a>
+                    <a href="#billing">piani e prezzi</a>
                 </li>
             </ul>
 
@@ -44,7 +44,7 @@
                 </li>
 
                 <li>
-                    <a href="#">contatta l'ufficio vendite</a>
+                    <a href="#ufficio-vendite-anchor">contatta l'ufficio vendite</a>
                 </li>
 
                 <li>
@@ -77,12 +77,12 @@
                         <p>Annulla in qualsiasi momento</p>
             
                         <a href="#billing">
-                            <i class="fas fa-arrow-down"></i>
+                            <i class="fas fa-arrow-down fa-bounce"></i>
                         </a>
                     </div>
                     
                     <figure>
-                        <a href=""></a> <img src="./assets/img/jumbo.png" alt="cta-jumbo">
+                        <img src="./assets/img/jumbo.png" alt="cta-jumbo">
                     </figure>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                         </div>
 
                         <!-- container to pad the inner elements -->
-                        <div class="plan-inner-container">
+                        <div class="plan-inner-container" >
 
                             <!-- price -->
                             <div class="price-month">
@@ -132,7 +132,7 @@
                             </div>
 
                             <!-- features -->
-                            <div class="feature">
+                            <div class="feature" id="funzioni-anchor">
                                 <span class="icon user-icon">1 utente</span>
                                 <p class="icon folder-icon">5 TB di spazio di archiviazione sicuro</p>
                                 <p class="icon share-icon">Funzioni di produttività premium e condivisione file semplice e sicura</p>
@@ -151,8 +151,17 @@
                             <!-- highlights -->
                             <div class="highlights">
                                 <h5>Punti Salienti del piano</h5>
-                                <p class="icon check-icon">Invia file fino a 100 GB con Dropbox Transfert</p>
-                                <p class="icon check-icon">Cartelle offline su dispositivi mobili</p>
+                                <ul class="flex-list">
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"> </span>
+                                        <p>Invia file fino a 100 GB con Dropbox Transfert</p>
+                                    </li>
+                                    
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"></span>
+                                        <p> Offline su dispositivi mobili Cartelle</p>
+                                    </li>
+                                </ul>
                             </div>
 
                         </div>
@@ -190,16 +199,38 @@
                                 <span>oppure <a href="#">acquista ora</a></span>
                             </div>
 
-                            <hr>
+                            <hr >
 
                             <!-- highlights -->
                             <div class="highlights">
                                 <h5>Punti Salienti del piano</h5>
-                                <p class="icon check-icon">Nessun limite di spazio per i file</p>
-                                <p class="icon check-icon">Cartelle offline su più dispositivi</p>
-                                <p class="icon check-icon">Risparmio del 50% rispetto alle iscrizioni singole</p>
-                                <p class="icon check-icon">Possibilità di inserire nuovi membri del team</p>
-                                <p class="icon check-icon">Gestione dei permessi in base ai ruoli</p>
+
+                                <ul class="flex-list">
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"></span>
+                                        <p>Nessun limite di spazio per i file</p>
+                                    </li>
+                                    
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"></span>
+                                        <p>Cartelle offline su più dispositivi</p>
+                                    </li>
+
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"></span>
+                                        <p>Risparmio del 50% rispetto alle iscrizioni singole</p>
+                                    </li>
+
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"></span>
+                                        <p>Possibilità di inserire nuovi membri del team</p>
+                                    </li>
+
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"></span>
+                                        <p>Gestione dei permessi in base ai ruoli</p>
+                                    </li>
+                                </ul>
                             </div>
 
                         </div>
@@ -243,9 +274,23 @@
                             <!-- highlights -->
                             <div class="highlights">
                                 <h5>Punti Salienti del piano</h5>
-                                <p class="icon check-icon">Cartelle offline su dispositivi mobili</p>
-                                <p class="icon check-icon">Servizio assistenza 24/h</p>
-                                <p class="icon check-icon">Possibilità di personalizzazione totale</p>
+
+                                <ul class="flex-list">
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"></span>
+                                        <p>Risparmio del 50% rispetto alle iscrizioni singole</p>
+                                    </li>
+
+                                    <li class="flex-element" id="ufficio-vendite-anchor">
+                                        <span class="icon check-icon"></span>
+                                        <p>Possibilità di inserire nuovi membri del team</p>
+                                    </li >
+
+                                    <li class="flex-element">
+                                        <span class="icon check-icon"></span>
+                                        <p>Gestione dei permessi in base ai ruoli</p>
+                                    </li>
+                                </ul>
                             </div>
 
                         </div>
@@ -358,8 +403,68 @@
                 </div>
             </div>
             
-
         </div>
+        <!-- section 3 -->
+        <div id="section3">
+            <div class="container">
+                <!-- section 3 title -->
+                <div class="partner-title">
+                    <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
+                    <a href="#partners">Scopri di più sui nostri clienti</a>
+                </div>
+            </div>
+
+            <!-- section 3 dropbox business-->
+            <div id="partners">
+
+                <!--col 1 left-->
+                <div class="business-square-col">
+                    <div class="square left-tl bg"></div>
+                    <div class="square left-bl bg"></div>
+                </div>
+                <!--col 2 left-->
+                <div class="business-square-col">
+                    <div class="square left-tr bg"></div>
+                    <div class="square left-br bg"></div>
+                </div>
+                <!--center col -->
+                <div class="business-square-center-col">
+                    <div class="square-center">
+                        <figure>
+                            <img src="./assets/img/designit.svg" alt="">
+                        </figure>
+                        <hr>
+                        <blockquote>
+                            "I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".
+                        </blockquote>
+                        <cite>Morten Thomsen, Global IT Lead</cite>
+                    </div>
+                </div>
+                <!--col 4 right-->
+                <div class="business-square-col">
+                    <div class="square right-tl bg"></div>
+                    <div class="square right-bl bg"></div>
+                </div>
+                <!--col 5 right-->
+                <div class="business-square-col">
+                    <div class="square right-tr bg"></div>
+                    <div class="square right-br bg"></div>
+                </div>
+                            
+            </div>
+            <!-- free trial banner -->
+            <div class="free-trial">
+                <div class="container">
+                    <h2>Porta Dropbox Business nella tua azienda.</h2>
+                    <a class="white btn" href="#">
+                        Inizia la tua prova gratuita
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        
     </main>
 
 </body>

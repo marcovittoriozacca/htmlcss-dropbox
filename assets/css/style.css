@@ -10,23 +10,21 @@ img{
     display: block;
 }
 
+
 .bold{
     font-weight: bold;
 }
-p, h3{
+p, h3, blockquote, cite{
     line-height: 140%;
 }
 html{
     font-family: sans-serif;
-    /* font-weight: 300; */
 }
 /* header elements */
 header nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: white;
-    padding:20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,10 +33,19 @@ header nav{
 
 nav ul{
     display: flex;
-    align-items: center;
     gap: 2em;
     list-style-type: none;
 }
+
+
+nav ul li{
+    padding:20px 15px 15px 15px;
+}
+nav ul li:hover{
+    border-bottom: 2px solid black;
+}
+
+
 
 nav ul li a{
     text-decoration: none;
@@ -203,6 +210,18 @@ h2{
     gap:1em;
 } 
 
+#section1 .plan .highlights .flex-list{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1em;
+}
+#section1 .plan .highlights .flex-list .flex-element{
+    display: flex;
+}
+
+
 #section1 .plan .highlights{
     padding-bottom: 2em;
 }
@@ -240,6 +259,7 @@ h3{
    width: 85%;
    padding-top: 3em;
 }
+
 
 
 /* plans icons */
@@ -298,6 +318,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     gap: 3em;
+    padding-bottom:5em;
 }
 #section2{
     margin-top:12em;
@@ -314,9 +335,168 @@ h3{
     width: calc((100% / 3) - 2em);
     display: flex;
     flex-direction: column;
+    gap:1em;
 }
 #section2 .business-boxes .text-box{
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+}
+
+/* section 3 elements */
+a{
+    color:#0661FF;
+}
+#section3 div.partner-title h2{
+    line-height: 140%;
+}
+#section3 div.partner-title{
+    padding-block: 9em;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#section3 #partners{
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* smaller squares */
+#section3 #partners .business-square-col{
+    width: 25%;
+}
+
+#section3 #partners .business-square-col .square{
+    height: 50%;
+}
+
+/* center square - bigger */
+#section3 #partners .business-square-center-col{
+    width: 50%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#section3 #partners .business-square-center-col .square-center{
+    height: 100%;
+    padding: 3em;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+    background-color: #F5F5F5;
+}
+
+#section3 #partners .business-square-center-col .square-center img{
+    width: 50%;
+}
+
+
+/* left logos */
+/* left group top-left */
+#section3 #partners .business-square-col .left-tl{
+    background-image:url(../img/designit_white.svg);
+    background-color: #A2D39B;
+    border: 15px solid #D1E9CD;
+}
+/* left group bottom-left */
+#section3 #partners .business-square-col .left-bl{
+    background-image:url(../img/university_of_florida.svg);
+    background-color: #0093CE;
+}
+/* left group top-right */
+#section3 #partners .business-square-col .left-tr{
+    background-image:url(../img/arizona_state_university.svg);
+    background-color: #61082B;
+}
+/* left group bottom-right */
+#section3 #partners .business-square-col .left-br{
+    background-image:url(../img/topps.svg);
+    background-color: #FF1C1C;
+}
+
+
+/* right logos */
+/* left right top-left */
+#section3 #partners .business-square-col .right-tl{
+    background-image:url(../img/world_bicycle_relief.svg);
+    background-color: #D5001F;
+}
+/* left right bottom-left */
+#section3 #partners .business-square-col .right-bl{
+    background-image:url(../img/lonely_planet.svg);
+    background-color: #0D2481;
+}
+/* left right top-right */
+#section3 #partners .business-square-col .right-tr{
+    background-image:url(../img/hearst_corp.svg);
+    background-color: #B4D0E7;
+}
+/* left right bottom-right */
+#section3 #partners .business-square-col .right-br{
+    background-image:url(../img/clear_channel.svg);
+    background-color: #FFD830;
+}
+
+/* to center the bg */
+.bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+
+#section3 hr{
+    border: 0.5px solid lightgray;
+    width: 25%;
+}
+cite{
+    font-style: normal;
+}
+
+/* free trial banner elements */
+#section3 div.free-trial{
+    background-color: #B4D0E7;
+}
+#section3 div.free-trial div.container{
+    padding-block: 7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#section3 .free-trial h2{
+    width: 50%;
+}
+#section3 div.free-trial div.container a.btn{
+    border: transparent;
+}
+#section3 div.free-trial div.container a.btn:hover{
+    border: transparent;
+    animation-name: vibrazione;
+    animation-timing-function: linear;
+    animation-duration:1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes vibrazione{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+
 }
