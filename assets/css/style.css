@@ -54,7 +54,7 @@ nav ul li a{
 }
 /* ----------------------- utility blue button */
 .btn{
-    padding:12px 17px;
+    padding:12px 20px;
     text-decoration: none;
 }
 
@@ -133,7 +133,7 @@ main{
     margin-top:75px
 }
 
-main div.container{
+.container{
     width: 55%;
     margin: 0 auto;
 }
@@ -210,14 +210,14 @@ h2{
     gap:1em;
 } 
 
-#section1 .plan .highlights .flex-list{
+#section1 .plan .flex-list{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     list-style-type: none;
     gap: 1em;
 }
-#section1 .plan .highlights .flex-list .flex-element{
+#section1 .plan .flex-list .flex-element{
     display: flex;
 }
 
@@ -463,7 +463,7 @@ cite{
     background-color: #B4D0E7;
 }
 #section3 div.free-trial div.container{
-    padding-block: 7em;
+    padding-block: 9em;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -499,4 +499,36 @@ cite{
     }
 
 
+}
+#section4{
+    margin-block:8em;
+}
+#section4 h2{
+    padding-bottom: 1.8em;
+}
+#section4 .flex-col-fq{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+#section4 .flex-fq{
+    display: flex;
+    justify-content: space-between;
+}
+#section4 i{
+    margin-right: 3em;
+}
+#section4 hr{
+    border: 0.5px solid gray;
+}
+#section4 p, #section4 i{
+    font-size: 1.1rem;
+}
+
+
+.hidden{
+    display:none;
+}
+#section4 .flex-fq:hover + .hidden{
+    display: block;
 }
