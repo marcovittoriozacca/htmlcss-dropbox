@@ -19,6 +19,7 @@ p, h3, blockquote, cite{
 }
 html{
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 /* header elements */
 header nav{
@@ -35,12 +36,14 @@ nav ul{
     display: flex;
     gap: 2em;
     list-style-type: none;
+    padding:0 15px 0 15px;
 }
 
 
 nav ul li{
-    padding:20px 15px 15px 15px;
+    padding:20px 0 15px 0;
 }
+
 nav ul li:hover{
     border-bottom: 2px solid black;
 }
@@ -76,7 +79,7 @@ nav ul li a{
     opacity: 0.5;
 }
 /* ---------------------------------------- */
-nav ul li a.blue-btn{
+nav ul li a.blue{
     margin-left: -20px;
 }
 
@@ -499,6 +502,7 @@ cite{
     }
 
 
+    /* section 4 frequent questions */
 }
 #section4{
     margin-block:8em;
@@ -506,14 +510,17 @@ cite{
 #section4 h2{
     padding-bottom: 1.8em;
 }
+
 #section4 .flex-col-fq{
     display: flex;
     flex-direction: column;
-    gap: 2.5em;
+
 }
 #section4 .flex-fq{
     display: flex;
     justify-content: space-between;
+    padding-block:2.5em;
+    
 }
 #section4 i{
     margin-right: 3em;
@@ -523,12 +530,86 @@ cite{
 }
 #section4 p, #section4 i{
     font-size: 1.1rem;
+    
 }
 
+/* section 4 frequent questions animations*/
+#section4 i{
+    transition:transform 0.5s;
+}
 
 .hidden{
     display:none;
 }
 #section4 .flex-fq:hover + .hidden{
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
     display: block;
+    padding-bottom: 1em;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#section4 .flex-fq:hover:nth-of-type(even) i{
+    transform: rotate(180deg);
+}
+#section4 .flex-fq:hover:nth-of-type(odd) i{
+    transform: rotate(-180deg);
+}
+
+
+/* footer elements */
+#footer, #footer a{
+    background-color: black;
+    text-decoration: none;
+    color: #EEFBFF;
+}
+
+#footer .f-container{
+    width: 60%;
+    margin: 0 auto;
+    padding:5em 0 2em 0;
+}
+#footer .f-container .flex-footer{
+    display: flex;
+    justify-content: space-between;
+}
+#footer .f-container .flex-footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    list-style-type:none;
+}
+
+#footer .f-container .flex-footer ul li:first-child{
+    font-size: 1.5rem;
+
+}
+#footer .f-container .flex-footer ul li a:hover{
+   border-bottom: 1px solid white;
+}
+
+#footer span.lang::after{
+    content: "▴";
+    margin-left: 2px;
+}
+#footer .footer-hr{
+    width: 11%;
+    margin:7em 0 3em 0;
+    border: 0.5px solid gray;
+}
+#footer .footer-lang{
+    font-weight: 200;
+    color: gray;
+    width: 11%;
+
+}
+#footer .footer-lang:hover{
+    cursor: pointer;
 }
