@@ -1,0 +1,348 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+img,
+video{
+    display: block;
+}
+html{
+    font-family: sans-serif;
+    color: white;
+}
+
+.blue-btn{
+    background-color: #0161FE;
+    color: white;
+    padding:10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 5px;
+}
+
+.light-blue-btn{
+    background-color: #3984FF;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.general-container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 1.1rem;
+    line-height: 180%;
+}
+
+/* navbar elements */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+
+    font-weight: 300;
+}
+
+header nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+header nav > ul li{
+    list-style-type: none;
+}
+header nav > ul:last-of-type li:first-of-type a i{
+    color: black;
+}
+header nav > ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* dropbox svg navbar logo */
+.flex-drop-logo{
+    display: flex;
+    align-items: center;
+}
+.drobpox-nav-logo{
+    background-color:#0161FE;
+}
+.flex-drop-logo figure{
+    padding: 9px;
+}
+
+/* main elements */
+main{
+    padding-top: 120px;
+    background-color:#1E1919;
+}
+
+/* cta elements */
+#cta{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    
+}
+main #cta .cta-small-container{
+    width: 50%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+}
+main #cta .cta-small-container h1{
+    line-height: 130%;
+    font-size: 2.5rem;
+}
+
+.big-container{
+    width: 93%;
+    margin: 0 auto;
+}
+main #cta .big-container video{
+    width: 100%;
+}
+
+/* feature section */
+section > h2:not(section#try h2){
+    text-align: center;
+    padding-block: 2.5em;
+}
+h2{
+    font-size: 2rem;
+}
+
+main #features .feature-box{
+    display: flex;
+    gap: 2.8em;
+}
+
+main #features .feature-box .box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    flex-basis: calc(100% / 4);
+
+    line-height: 160%;
+}
+main #features .feature-box .box h4{
+    font-size: 1.2rem;
+}
+
+/* how to use it section elements */
+#how-to-use-it div.big-container{
+    display: flex;
+    gap: 1em;
+}
+
+#how-to-use-it div.big-container div.card{
+    width: 50%;
+    background-color:#2B2929;
+}
+
+#how-to-use-it div.big-container div.card figure img{
+    width: 100%;
+}
+#how-to-use-it div.big-container div.card div.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 3em;
+}
+#how-to-use-it div.big-container div.card div.info h3{
+    font-size:1.6rem;
+    font-weight: 300;
+    padding-block: 0.5em;
+}
+#how-to-use-it div.big-container div.card div.info p{
+    word-spacing: 1px;
+}
+#how-to-use-it div.big-container div.card div.info a{
+    word-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+/* capacity elements */
+#capacity div.general-container{
+    display: flex;
+    gap: 3em;
+}
+#capacity div.general-container div.col-capacity{
+    flex-basis: calc(100% / 3);
+}
+
+#capacity div.general-container div.col-capacity{
+    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* cites section */
+#cites{
+    background-color:#232121;
+    padding:4em 1em 5em 4em;
+    margin-top: 90px;
+}
+#cites .cites-container{
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#cites .cites-container figure{
+    flex-basis: 30%;
+}
+#cites .cites-container figure img{
+    width: 100%;
+
+}
+
+#cites .cites-container div.info{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+#cites .cites-container div.info blockquote{
+    font-size:1.5rem;
+}
+#cites .cites-container div.info a{
+    color: white;
+    font-size: 1.1rem;
+    width: fit-content;
+}
+#cites .cites-container div.info a i{
+    margin-left:13px;
+}
+#cites .cites-container div.info cite{
+    font-style:normal;
+}
+#cites .cites-container div.info cite + span{
+    color: gray;
+    font-size: 0.8rem;
+    margin-top: -13px;
+}
+#cites .cites-container div.arrow-icon a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    
+    /* color: #232121; */
+    color: white;
+}
+
+/* #cites .info:hover div.arrow-icon a{
+    color: white;
+} */
+
+#cites .cite-number{
+    color: gray;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 30px;
+}
+#cites .cite-number:hover{
+    cursor: pointer;
+}
+#cites .cite-number span i{
+    margin-left: 10px;
+}
+/* section try elements */
+#try{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 100px;
+}
+
+#try > h2{
+    font-size: 3rem;
+}
+
+/* footer element */
+footer{
+    background-color: black;
+}
+
+footer div.general-container:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding-block: 70px;
+}
+
+footer div.general-container ul{
+    flex-basis: calc(100% / 5);
+    font-weight: 300;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer div.general-container ul li:first-child{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-block: 1em;
+}
+
+footer div.general-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer div.general-container ul li a:hover{
+    text-decoration: underline;
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+#socials .social-icon{
+    display: flex;
+    gap: 1em;
+    font-size: 1.4em;
+}
+#socials hr{
+    width: 10%;
+    border: 0.1px solid gray;
+}
+#socials .lang{
+    font-size: 1.1rem;
+    padding-bottom: 50px;
+}
+#socials .lang i{
+    margin-left: 5px;
+}
