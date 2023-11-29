@@ -450,13 +450,6 @@ a{
     background-color: #FFD830;
 }
 
-/* to center the bg */
-.bg{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-}
-
 /* section 3 inner square circles element */
 #section3 hr{
     border: 0.5px solid lightgray;
